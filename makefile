@@ -9,7 +9,7 @@ build/index.html: index.md template.html
 	pandoc $(PDFLAGS) -o build/index.html index.md --metadata title="Lannysport"
 
 build/recipes/%.html: recipes/%.md
-	pandoc $(PDFLAGS) -o $@ $<
+	pandoc $(PDFLAGS) -o $@ $< --filter ./prettify_fractions.py
 
 clean:
 	rm -r build/
