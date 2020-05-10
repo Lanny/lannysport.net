@@ -21,4 +21,5 @@ Chemical space is a tool for computing and viewing chemical similarity (under a 
 Recipe management seems like the one thing we should be able to do well on a computer at this point but honestly it really kind of sucks. There's no well accepted interchange format and lots of garbage software that's one or more of closed source, paid, lock-in-y, or just plain lousy. I've had to manually transfer recipes several times now and it blows. And all I really need is a lightly formatted document at the end of the day. So now my recipe book lives here.
 
 - [Groundnut Stew](recipes/groundnut-stew.html)
+- [Oknomiyaki](recipes/okonomiyaki.html)
 

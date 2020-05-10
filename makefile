@@ -1,6 +1,6 @@
 SRC = $(wildcard *.md)
 RECIPES_SRC = $(wildcard recipes/*.md)
-RECIPES_HTML=build/$(RECIPES_SRC:.md=.html)
+RECIPES_HTML=$(RECIPES_SRC:%.md=build/%.html)
 PDFLAGS = -s --template template.html -f markdown-smart -t html
 
 all: build/index.html $(RECIPES_HTML)
