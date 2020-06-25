@@ -6,6 +6,8 @@ author: lanny
 # Goat Cheese Stuffed Chicken Breasts
 Chicken breasts stuffed with goat cheese prepared in a balsamic vinegar reduction.
 
+![](images/goat-cheese-stuffed-chicken-breasts.jpg "Goat Cheese Stuffed Chicken Breasts"){.recipe-img}
+
 ## Ingredients
 - 1 teaspoon olive oil (or butter)
 - 1 shallot, finely diced
