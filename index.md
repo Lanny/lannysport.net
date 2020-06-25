@@ -22,4 +22,5 @@ Recipe management seems like the one thing we should be able to do well on a com
 
 - [Groundnut Stew](recipes/groundnut-stew.html)
 - [Oknomiyaki](recipes/okonomiyaki.html)
+- [Goat Cheese Stuffed Chicken Breasts](recipes/goat-cheese-stuffed-chicken-breasts.html)
 
