@@ -6,6 +6,8 @@ author: lanny
 # Oknomiyaki
 Savory Japanese cabbage pancake.
 
+![](images/okonomiyaki.jpg "Okonomitaki"){.recipe-img}
+
 ## Ingredients
 ### Pancakes
 - 2 large eggs

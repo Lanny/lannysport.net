@@ -6,6 +6,9 @@ author: lanny
 # Groundnut Stew
 An African inspired stew made with peanuts. Excellent served over rice with a quarter lime's worth of juice squeezed over the top. You can add chicken for extra protein. Jalapeno works as a substitute for serrano although it does change the flavor somewhat. Add more cayenne or chili pepper to bring up the spice level.
 
+![](images/groundnut-stew.jpg "Groundnut Stew"){.recipe-img}
+
+
 ## Ingredients
 - 1 tablespoon peanut oil
 - 1 medium onion, diced
