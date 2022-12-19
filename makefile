@@ -18,14 +18,14 @@ build/index.html: index.md template.html
 	pandoc $(PDFLAGS) -o build/index.html index.md --metadata title="Lannysport"
 
 build/recipes/%.html: recipes/%.md
-	pandoc $(PDFLAGS) -o $@ $< --filter prettify_fractions.py
+	pandoc $(PDFLAGS) -t json $< | python ./prettify_fractions.py | pandoc -s -f json -o $@
 
 build/recipes/images/%.jpg: recipes/images/%.jpg
 	cp $< $@
 
 build/writing/%.html: writing/%.md
 	mkdir -p build/writing
-	pandoc $(PDFLAGS) --highlight-style pygments -o $@ $<
+	pandoc $(PDFLAGS) --syntax-definition syntax/nix.xml --highlight-style pygments -o $@ $<
 
 clean:
 	rm -r build/
