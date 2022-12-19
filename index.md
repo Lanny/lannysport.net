@@ -1,3 +1,8 @@
+---
+title: Lannysport
+author: Lanny
+date: 2022-12-18
+---
 # Lannysport
 
 I'm Lanny, I make some things, mostly software. Lately I've been been working on a foreign language learning tool called [Journaly](#Journaly). My largest project/labor of love in the past several years has been [ISS](#ISS). In the course of that project I started [Houston](#Houston), which is a Django app aimed at providing site usage analytics, sorta like Google Analytics but without all the privacy invasion and likely selling off of data. Slightly before and during the start of the great 2020 debacle, I was working on a project aimed at delivering synchronized video playback in modern browsers over networks with non-negligible latency, [CGRO](#CGRO). I don't name all my projects after space stuff, I swear. I also make little games sometimes, most notably web based implementations of [Onitama](#onitama) and [YINSH](#YINSH).
@@ -21,8 +26,9 @@ YINSH a two player, perfect information game, played on something like a non-squ
 Chemical space is a tool for computing and viewing chemical similarity (under a few different definitions of "chemical similarity") between large sets of chemicals. It is one of the more demo-able results of my work in chemical analysis/drug discovery as part of my masters. [Source code](https://github.com/Lanny/cspace). [Live version](http://cspace.lannysport.net/).
 
 ## Writing
+I write things sometimes too. Most of it I start and then scrap because it sounds a lot better in my head and editing is a lot of work. Here's the stuff that I actually managed to get published.
 
-- [Two Kinds of Superiority](recipes/two-kinds-of-superiority.html)
+- [Nix Derivations with Leiningen](writing/nix-leiningen.html)
 
 ## Recipes
 Recipe management seems like the one thing we should be able to do well on a computer at this point but honestly it really kind of sucks. There's no well accepted interchange format and lots of garbage software that's one or more of closed source, paid, lock-in-y, or just plain lousy. I've had to manually transfer recipes several times now and it blows. And all I really need is a lightly formatted document at the end of the day. So now my recipe book lives here.
