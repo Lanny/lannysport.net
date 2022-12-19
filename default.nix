@@ -12,6 +12,10 @@ in pkgs.stdenv.mkDerivation rec {
   ];
 
   src = ./.;
+  buildPhase = ''
+    export PATH="$PATH:${python}/bin"
+    make
+  '';
 }
 
 
