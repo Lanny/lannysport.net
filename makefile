@@ -25,7 +25,7 @@ build/recipes/images/%.jpg: recipes/images/%.jpg
 
 build/writing/%.html: writing/%.md
 	mkdir -p build/writing
-	pandoc $(PDFLAGS) -o $@ $<
+	pandoc $(PDFLAGS) --highlight-style pygments -o $@ $<
 
 clean:
 	rm -r build/

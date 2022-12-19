@@ -20,6 +20,10 @@ YINSH a two player, perfect information game, played on something like a non-squ
 ## Chemical Space<a name="cspace"></a>
 Chemical space is a tool for computing and viewing chemical similarity (under a few different definitions of "chemical similarity") between large sets of chemicals. It is one of the more demo-able results of my work in chemical analysis/drug discovery as part of my masters. [Source code](https://github.com/Lanny/cspace). [Live version](http://cspace.lannysport.net/).
 
+## Writing
+
+- [Two Kinds of Superiority](recipes/two-kinds-of-superiority.html)
+
 ## Recipes
 Recipe management seems like the one thing we should be able to do well on a computer at this point but honestly it really kind of sucks. There's no well accepted interchange format and lots of garbage software that's one or more of closed source, paid, lock-in-y, or just plain lousy. I've had to manually transfer recipes several times now and it blows. And all I really need is a lightly formatted document at the end of the day. So now my recipe book lives here.
 

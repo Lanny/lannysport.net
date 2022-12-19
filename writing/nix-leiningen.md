@@ -18,13 +18,12 @@ In this case, lein will try to fetch dependencies as soon as you run any command
 
 Probably the _correct_ thing here would be to write a `lein2nix` utility, but that seemed like a lot of work to support a workflow I don't think is even really endorsed in the Clojure ecosystem anymore. Instead we can use what I've seen widely referred to as "fixed output derivations" but don't seem to be [documented as such](https://nixos.org/manual/nix/stable/language/advanced-attributes.html#adv-attr-outputHashMode). While the docs largely discuss fixed output derivations for use with fetching tarballs and the like we can, with a couple of hacks, use the same trick to assure nix we know what dependencies we should be getting. The rule here appears to be that if a derivation provides an output hash nix will lift the network sandbox, which seems like a reasonable compromise. The approach then is to provide a hash for the output of lein's dependency fetching and allow it to operate as usual, then package those dependencies for consumption by the app.
 
-Now it's worth noting that we could cut a step out here and specify an output hash for the whole project's build. That would work but it has the drawback that a. the build will always have to re-download the dependencies as there would be no cache and b. we'd need to adjust the output hash each time the project's souce code changed, isolating deps to their own .
+Now it's worth noting that we could cut a step out here and specify an output hash for the whole project's build. That would work but it has the drawback that a. the build will always have to re-download the dependencies as there would be no cache and b. we'd need to adjust the output hash each time the project's souce code changed, isolating deps to their own.
 
 All together this looks something like:
 
 **fixed-deps.nix**
-```
-
+```nix
 with import <nixpkgs> {};
 pkgs.stdenv.mkDerivation rec {
   name = "my-project-deps";
@@ -64,7 +63,7 @@ pkgs.stdenv.mkDerivation rec {
 ```
 
 **default.nix**
-```
+```nix
 with import <nixpkgs> {};
 let
   deps = import ./fixed-deps.nix;

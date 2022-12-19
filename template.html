@@ -7,6 +7,12 @@
   $if(title)$
     <title>$title$</title>
   $endif$
+  $for(author-meta)$
+    <meta name="author" content="$author-meta$" />
+  $endfor$
+  $if(date-meta)$
+    <meta name="dcterms.date" content="$date-meta$" />
+  $endif$
 
   <style type="text/css">
     h1, h2, h3 {
@@ -35,6 +41,8 @@
       }
     }
   </style>
+
+  $code.html()$
 </head>
 <body>
   $body$
