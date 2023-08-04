@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-make
-scp -r build/* lanny@lannysport.net:/opt/lannysport
+nix-build
+scp -r result/* lanny@lannysport.net:/opt/lannysport
