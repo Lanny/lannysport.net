@@ -2,6 +2,7 @@
 title: Nix Derivations with Leiningen
 author: Lanny
 date: 2022-12-14
+syntax-highlighting: true
 ---
 
 # Nix Derivations with Leiningen

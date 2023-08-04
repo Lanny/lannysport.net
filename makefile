@@ -7,7 +7,7 @@ RECIPES_HTML=$(RECIPES_SRC:%.md=build/%.html)
 RECIPES_IMG=$(RECIPES_IMG_SRC:%=build/%)
 WRITING_HTML=$(WRITING_SRC:%.md=build/%.html)
 
-PDFLAGS = -s --template template.html -f markdown-smart -t html
+PDFLAGS = -s --template template.html -f markdown-smart+footnotes -t html
 
 all: build/index.html $(RECIPES_HTML) $(RECIPES_IMG) $(WRITING_HTML)
 
@@ -18,7 +18,7 @@ build/index.html: index.md template.html
 	pandoc $(PDFLAGS) -o build/index.html index.md --metadata title="Lannysport"
 
 build/recipes/%.html: recipes/%.md
-	pandoc $(PDFLAGS) -t json $< | python ./prettify_fractions.py | pandoc -s -f json -o $@
+	pandoc $(PDFLAGS) -t json $< | ./prettify_fractions.py | pandoc -s -f json -o $@
 
 build/recipes/images/%.jpg: recipes/images/%.jpg
 	cp $< $@
