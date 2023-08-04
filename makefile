@@ -18,7 +18,7 @@ build/index.html: index.md template.html
 	pandoc $(PDFLAGS) -o build/index.html index.md --metadata title="Lannysport"
 
 build/recipes/%.html: recipes/%.md
-	pandoc $(PDFLAGS) -t json $< | ./prettify_fractions.py | pandoc -s -f json -o $@
+	pandoc $(PDFLAGS) -t json $< | python3 prettify_fractions.py | pandoc -s -f json -o $@
 
 build/recipes/images/%.jpg: recipes/images/%.jpg
 	cp $< $@

@@ -28,6 +28,7 @@ Chemical space is a tool for computing and viewing chemical similarity (under a 
 ## Writing
 I write things sometimes too. Most of it I start and then scrap because it sounds a lot better in my head and editing is a lot of work. Here's the stuff that I actually managed to get published.
 
+- [Privacy Legislation and an Independent Internet](writing/privacy-legislation-and-an-independent-internet.html)
 - [Nix Derivations with Leiningen](writing/nix-leiningen.html)
 
 ## Recipes
