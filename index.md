@@ -3,7 +3,6 @@ title: Lannysport
 author: Lanny
 date: 2022-12-18
 ---
-# Lannysport
 
 I'm Lanny, I make some things, mostly software. Lately I've been been working on a foreign language learning tool called [Journaly](#Journaly). My largest project/labor of love in the past several years has been [ISS](#ISS). In the course of that project I started [Houston](#Houston), which is a Django app aimed at providing site usage analytics, sorta like Google Analytics but without all the privacy invasion and likely selling off of data. Slightly before and during the start of the great 2020 debacle, I was working on a project aimed at delivering synchronized video playback in modern browsers over networks with non-negligible latency, [CGRO](#CGRO). I don't name all my projects after space stuff, I swear. I also make little games sometimes, most notably web based implementations of [Onitama](#onitama) and [YINSH](#YINSH).
 

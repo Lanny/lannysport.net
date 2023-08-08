@@ -25,7 +25,7 @@ build/recipes/images/%.jpg: recipes/images/%.jpg
 
 build/writing/%.html: writing/%.md
 	mkdir -p build/writing
-	pandoc $(PDFLAGS) --syntax-definition syntax/nix.xml --highlight-style pygments -o $@ $<
+	pandoc $(PDFLAGS) --syntax-definition syntax/nix.xml --highlight-style=zenburn -o $@ $<
 
 clean:
 	rm -r build/

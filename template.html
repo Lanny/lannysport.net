@@ -15,18 +15,34 @@
   $endif$
 
   <style type="text/css">
-    h1, h2, h3 {
-      line-height: 1.2;
-    }
+    html { font-size: 18px; }
+    h1, h2, h3 { line-height: 1.2; }
     body {
-      margin: 40px auto;
-      max-width: 650px;
-      line-height: 1.6;
-      font-size: 18px;
-      color: #444;
-      padding: 0 10px;
+      color: #d3c6aa;
+      background-color: #272e33;
+      margin: 0;
     }
-
+    a { color: #a7c080; }
+    blockquote {
+      border-left: 1px solid #d3c6aa;
+      margin: 0 0.5rem;
+      padding: 0 1rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #d3c6aa;
+      width: 4rem;
+      margin: 2rem auto;
+    }
+    nav {
+      background-color: #a7c080;
+      padding: 0.2rem 1rem;
+    }
+    nav > a {
+      color: #272e33;
+      font-family: sans-serif;
+      text-decoration: none;
+    }
     .recipe-img {
       display: block;
       margin: 0 auto;
@@ -35,18 +51,40 @@
       border: 1px solid black;
     }
 
+    .content {
+      margin: 40px auto;
+      max-width: 36rem;
+      line-height: 1.6;
+      padding: 0 0.75rem;
+    }
     @media only screen and (max-width: 768px) {
-      body {
+      .content {
         max-width: 100%;
       }
     }
-  </style>
+    $if(syntax-highlighting)$
+    $highlighting-css$
+    div.sourceCode { background-color: unset; }
+    pre {
+      overflow-x: auto;
+      border-left: 1px solid grey;
+      padding-left: 1rem;
+      font-size: 1rem;
+    }
 
-  $if(syntax-highlighting)$
-    $code.html()$
-  $endif$
+    code:not(.sourceCode) {
+      background: #DEDEDE;
+      border-radius: 3px;
+      padding: 0 5px;
+      font-size: 1rem;
+    }
+    $endif$
+  </style>
 </head>
 <body>
-  $body$
+  <nav>
+    <a href="/">lannysport.net</a>
+  </nav>
+  <div class="content">$body$</div>
 </body>
 </html>
