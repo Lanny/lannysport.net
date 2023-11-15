@@ -29,6 +29,7 @@ I write things sometimes too. Most of it I start and then scrap because it sound
 
 - [Privacy Legislation and an Independent Internet](writing/privacy-legislation-and-an-independent-internet.html)
 - [Nix Derivations with Leiningen](writing/nix-leiningen.html)
+- [Cool Things](writing/cool-things.html)
 
 ## Recipes
 Recipe management seems like the one thing we should be able to do well on a computer at this point but honestly it really kind of sucks. There's no well accepted interchange format and lots of garbage software that's one or more of closed source, paid, lock-in-y, or just plain lousy. I've had to manually transfer recipes several times now and it blows. And all I really need is a lightly formatted document at the end of the day. So now my recipe book lives here.
